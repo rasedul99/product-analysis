@@ -1,0 +1,12 @@
+.container {
+  padding: 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img img {
+  width: 300px;
+}
+.reviews {
+  padding: 5% 20%;
+}
