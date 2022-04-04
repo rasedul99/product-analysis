@@ -1,13 +1,15 @@
 import React from "react";
+import useReviewFetch from "../../hooks/useReviewFetch";
 import Review from "./Review";
 import "./Reviews.css";
 
 const Reviews = () => {
+  const reviews = useReviewFetch();
   return (
     <div className="reviews-container">
-      <Review />
-      <Review />
-      <Review />
+      {reviews.map((review) => (
+        <Review reviews={review} />
+      ))}
     </div>
   );
 };

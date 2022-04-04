@@ -1,19 +1,17 @@
 import React from "react";
 import "./Review.css";
 
-const Review = () => {
+const Review = ({ reviews }) => {
+  console.log(reviews);
   return (
     <div className="review-container">
       <div className="description">
         <div className="img-container">
-          <img
-            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
-            alt=""
-          />
+          <img src={reviews.img} alt="" />
         </div>
-        <h4>sara jones</h4>
-        <p>very good to use</p>
-        <p>5 star</p>
+        <h4>{reviews.name}</h4>
+        <p>{reviews.comment}</p>
+        <p>{reviews.rating} star</p>
       </div>
     </div>
   );
