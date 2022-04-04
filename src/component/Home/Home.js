@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Reviews from "../Reviews/Reviews";
+import useReviewFetch from "../../hooks/useReviewFetch";
+import Review from "../Reviews/Review";
 import "./Home.css";
 
 const Home = () => {
+  const reviews = useReviewFetch();
   return (
     <>
       <div className="container">
@@ -20,11 +22,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <h3>Customer Reviews</h3>
       <div className="reviews">
-        <h3>Customer Reviews</h3>
-        <Reviews />
-        <Link to="/reviews"> See all Reviews</Link>
+        {reviews.slice(0, 3).map((review) => (
+          <Review review={review} />
+        ))}
       </div>
+      <Link to="/reviews" className="Reviews-btn">
+        See all Reviews
+      </Link>
     </>
   );
 };

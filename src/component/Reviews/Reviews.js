@@ -8,7 +8,7 @@ const Reviews = () => {
   return (
     <div className="reviews-container">
       {reviews.map((review) => (
-        <Review reviews={review} />
+        <Review review={review} />
       ))}
     </div>
   );
