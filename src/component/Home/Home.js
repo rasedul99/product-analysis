@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div className="container">
         <div className="half">
-          <h3>Watch gallary</h3>
+          <h1>Watch gallary</h1>
           <p>Explore best watches for your smartness.</p>
         </div>
         <div className="half">
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
       </div>
       <div className="customer-reviews-container">
-        <h3>Customer Reviews</h3>
+        <h2>Customer Reviews</h2>
         <div className="reviews">
           {reviews.slice(0, 3).map((review) => (
             <Review review={review} />
