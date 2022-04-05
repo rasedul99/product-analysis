@@ -7,12 +7,18 @@
 .img img {
   width: 300px;
 }
+.customer-reviews-container {
+  text-align: center;
+}
 .reviews {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 5% 20%;
 }
 .Reviews-btn {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: #6047ec;
   border: none;
   border-radius: 5px;

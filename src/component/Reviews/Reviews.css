@@ -1,3 +1,6 @@
 .reviews-container {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px 20px;
 }

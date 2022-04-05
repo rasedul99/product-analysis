@@ -1,9 +1,10 @@
-.review-container {
-  border: 2px solid red;
-  width: 300px;
+.review {
+  padding: 15px 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
-.description {
-  padding: 0 5px;
+.review p {
+  margin: 0;
 }
 .img-container img {
   width: 100px;

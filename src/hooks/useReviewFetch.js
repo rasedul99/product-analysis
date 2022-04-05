@@ -7,7 +7,7 @@ const useReviewFetch = () => {
     fetch("reviews.JSON")
       .then((res) => res.json())
       .then((data) => setReviews(data));
-  }, []);
+  }, [reviews]);
 
   return reviews;
 };

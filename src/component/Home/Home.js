@@ -22,15 +22,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <h3>Customer Reviews</h3>
-      <div className="reviews">
-        {reviews.slice(0, 3).map((review) => (
-          <Review review={review} />
-        ))}
+      <div className="customer-reviews-container">
+        <h3>Customer Reviews</h3>
+        <div className="reviews">
+          {reviews.slice(0, 3).map((review) => (
+            <Review review={review} />
+          ))}
+        </div>
+        <Link to="/reviews" className="Reviews-btn">
+          See all Reviews
+        </Link>
       </div>
-      <Link to="/reviews" className="Reviews-btn">
-        See all Reviews
-      </Link>
     </>
   );
 };
