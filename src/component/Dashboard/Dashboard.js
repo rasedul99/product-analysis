@@ -1,7 +1,7 @@
 import React from "react";
-import Barchart from "./Barchart";
+import Barchart from "./Chart/Barchart";
+import Linechart from "./Chart/Linechart";
 import "./Dashboard.css";
-import Linechart from "./Linechart";
 
 const data = [
   {

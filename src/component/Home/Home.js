@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useReviewFetch from "../../hooks/useReviewFetch";
-import Review from "../Reviews/Review";
+import Review from "../Reviews/Review/Review";
 import "./Home.css";
 
 const Home = () => {

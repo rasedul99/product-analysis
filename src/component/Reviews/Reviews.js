@@ -1,6 +1,6 @@
 import React from "react";
 import useReviewFetch from "../../hooks/useReviewFetch";
-import Review from "./Review";
+import Review from "./Review/Review";
 import "./Reviews.css";
 
 const Reviews = () => {

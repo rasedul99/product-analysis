@@ -4,7 +4,7 @@ import "./Blogs.css";
 const Blogs = () => {
   return (
     <div className="blog-container">
-      <h2>what is context api </h2>
+      <h2>what is context api ? </h2>
       <p>
         The Context API is a React structure that enables you to exchange unique
         details and assists in solving prop-drilling from all levels of your
